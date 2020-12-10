@@ -1,3 +1,6 @@
+# we don't know how this gets created but it does not seem to include any sensitive data despite the name
+secret_goodreads_credentials.pkl
+
 # ignore dotfiles/folders but not .gitignore
 .*
 !/.gitignore
