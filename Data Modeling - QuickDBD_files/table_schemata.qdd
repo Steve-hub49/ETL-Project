@@ -1,0 +1,53 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+top_100_books
+-
+rank2 INT 
+book2 VARCHAR PK
+author2 VARCHAR
+ratings2 INT
+reviews2 INT
+type2 VARCHAR
+price2 INT
+
+goodreads
+-
+Book_ID INT 
+Title VARCHAR FK >- top_100_books.book2
+Author VARCHAR
+Author_I-f VARCHAR
+Additional_Authors VARCHAR
+ISBN INT
+ISBN13 INT
+My_Rating INT
+Average_Rating INT
+Publisher VARCHAR
+Binding VARCHAR
+Number_of_Pages INT
+Year_Published INT
+Original_Publication_Year INT
+Date_Read INT
+Date_Added INT
+Bookshelves VARCHAR
+Bookshelves_with_positions VARCHAR
+Exclusive_Shelf VARCHAR
+My_Review INT
+Spoiler VARCHAR 
+Private_Notes VARCHAR
+Read_Count INT
+Recommended_For VARCHAR
+Recommended_By VARCHAR
+Owned_Copies VARCHAR
+Original_Purhcase_Date VARCHAR
+Original_Purhcase_Location VARCHAR
+Condition VARCHAR
+Condition_Description VARCHAR
+BCID VARCHAR
+
+
+
+
+
+
