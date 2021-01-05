@@ -12,8 +12,9 @@ CREATE TABLE "top_100_books" (
     "author2" VARCHAR   NOT NULL,
     "ratings2" INT   NOT NULL,
     "reviews2" INT   NOT NULL,
-    "type2" VARCHAR   NOT NULL,
-    "price2" INT   NOT NULL,
+    "ISBN" INT   NOT NULL,
+    "GR_AVERAGE_RATING" INT   NOT NULL,
+    "GR_RATINGS_COUNT" INT   NOT NULL,
     CONSTRAINT "pk_top_100_books" PRIMARY KEY (
         "book2"
      )

@@ -9,8 +9,9 @@ book2 VARCHAR PK
 author2 VARCHAR
 ratings2 INT
 reviews2 INT
-type2 VARCHAR
-price2 INT
+ISBN INT
+GR_AVERAGE_RATING INT
+GR_RATINGS_COUNT INT
 
 goodreads
 -
