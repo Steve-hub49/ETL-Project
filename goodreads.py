@@ -18,9 +18,5 @@ def book_review_counts(isbn):
     base_url_book_review_counts = "https://www.goodreads.com/book/review_counts.json"
     query_url_book_review_counts = f"{base_url_book_review_counts}?key={goodreads_api_key}&isbns={isbn}"   
     review_counts_json = get_json(query_url_book_review_counts)
-    review_counts_all = review_counts_json['books'][0]
-    review_counts_relevant = {
-        'average_rating': review_counts_all['average_rating'],
-        'ratings_count': review_counts_all['ratings_count'],
-        }
-    return review_counts_relevant
+    review_counts = review_counts_json['books'][0]
+    return review_counts
